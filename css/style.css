@@ -1,0 +1,194 @@
+body{
+    font: 1rem sans-serif;
+    background-color: rgba(0, 0, 0, .2);
+    color: black;
+}
+.menu{
+    //display: grid;
+    //grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+    justify-content: center;
+}
+.menu div{
+    display: grid;
+    text-align: center;
+    width: 32%;
+    height: 50%;
+    background-color: red;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    margin: .12%;
+}
+
+.ventas div, .hipoteca div, .notas di, .perfriesgo div, .notas div{
+    border: 1px solid #000;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.notas, .hipoteca{
+    margin-top: .5rem
+}
+
+.ventas{
+    display: grid;
+    grid-column-gap: .5rem;
+    grid-row-gap: .3rem;
+    grid-template-columns: 1fr 1fr 1fr
+}
+.cajav1, .cajav2, .cajav3, .cajav4, .cajav7, .cajav10{
+    background-color: red;
+}
+.cajav5, .cajav6, .cajav8, .cajav9, .cajav11, .cajav12{
+    background-color: darksalmon
+}
+.notas{
+    display: grid;
+    grid-column-gap: .5rem;
+    grid-row-gap: .3rem;
+    grid-template-columns: 10rem 15rem;
+}
+.hipoteca{
+    display: grid;
+    grid-column-gap: .5rem;
+    grid-row-gap:.4rem;
+    grid-template-columns: 1fr 1fr;
+}
+.perfriesgo{
+    display: grid;
+    grid-column-gap: .5rem;
+    grid-row-gap:.4rem;
+    grid-template-columns: 1fr 1fr;
+}
+.conteva {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: auto auto auto;
+    background-color: #ff9999;
+    padding: .5rem;
+}
+
+.conteva div{
+    background-color: red;
+    border: 1px solid #000;
+    border-radius: .6rem;
+    text-align: center;
+    color: black;
+}
+/*----cuadro de capital de trabajo--------*/
+
+.capitaltrabajo div{
+    border: 1px solid #000;
+    padding: .4rem;
+    border-radius: .5rem;
+    text-align: center;
+    text-justify: center;
+    //text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+.capitaltrabajo{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.capitaltrabajo .caja1, .capitaltrabajo .caja2, .capitaltrabajo .caja3, .capitaltrabajo .caja4{
+    grid-row: 1/3;
+    background-color: red
+}
+.capitaltrabajo .caja5{
+    grid-column: 5/7;
+    background-color: red;
+}
+.capitaltrabajo .caja6, .capitaltrabajo .caja7, .capitaltrabajo .caja8, .capitaltrabajo .caja9, .capitaltrabajo .caja10, .capitaltrabajo .caja11, .capitaltrabajo .caja21, .capitaltrabajo .caja31{
+    background-color: red;
+}
+.capitaltrabajo .caja6, .capitaltrabajo .caja20, .capitaltrabajo .caja30, .capitaltrabajo .caja36, .capitaltrabajo .caja40{
+    grid-column: 7/9
+}
+.capitaltrabajo .caja11, .capitaltrabajo .caja12{
+    grid-row: 3/5
+}
+.capitaltrabajo .caja14{
+    grid-column-start: 4;
+    grid-row-start:  3;
+    grid-row-end:  5;
+}
+.capitaltrabajo .caja15, .capitaltrabajo .caja19, .capitaltrabajo .caja25, .capitaltrabajo .caja29, .capitaltrabajo .caja35, .capitaltrabajo .caja39{
+    grid-column: 5/7
+}
+.capitaltrabajo .caja21, .capitaltrabajo .caja22{
+    grid-row: 5/7
+}
+.capitaltrabajo .caja24{
+    grid-column-start:4 ;
+    grid-row-start:  5;
+    grid-row-end:  7;
+}
+.capitaltrabajo .caja31, .capitaltrabajo .caja32{
+    grid-row: 7/9
+}
+.capitaltrabajo .caja34{
+    grid-column-start:4 ;
+    grid-row-start:  7;
+    grid-row-end:  9;
+}
+/*----FINANCIAMIENTO DE INVERSION-------*/
+.finanzainversion div{
+    border: 1px solid #000;
+    padding: .4rem;
+    border-radius: .5rem;
+    text-align: center;
+    text-justify: center;
+    //text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+.finanzainversion {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.finanzainversion .caja1, .finanzainversion .caja2, .finanzainversion .caja3, .finanzainversion .caja4, .finanzainversion .caja5{
+    grid-row: 1/4
+}
+.finanzainversion .caja6{
+    grid-column: 6/8;
+}
+.finanzainversion .caja11, .finanzainversion .caja12{
+    grid-row: 4/7
+}
+.finanzainversion .caja16{
+    grid-column-start: 6;
+    grid-row: 4/7
+}
+.finanzainversion .caja17{
+    grid-column-start: 7;
+    grid-row: 4/7;
+}
+.finanzainversion .caja24, .finanzainversion .caja25{
+    grid-row: 7/10;
+}
+.finanzainversion .caja29{
+    grid-column-start: 6;
+    grid-row: 7/10
+}
+.finanzainversion .caja30{
+    grid-column-start: 7;
+    grid-row: 7/10;
+}
+.finanzainversion .caja37, .finanzainversion .caja38{
+    grid-row: 10/13
+}
+.finanzainversion .caja42{
+    grid-column-start: 6;
+    grid-row: 10/13
+}
+.finanzainversion .caja43{
+    grid-column-start: 7;
+    grid-row: 10/13
+}
